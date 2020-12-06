@@ -1,6 +1,10 @@
+import { header } from './modules/header';
+import { lunch-generator } './modules/lunch-generator';
+import { footer } from './modules/footer';
+
 class App {
-  constructor(appContent){
-    this.appContent = appContent;
+  constructor(){
+    this.renderTemplate();
   }
 
   renderTemplate() {
@@ -42,3 +46,5 @@ class App {
     document.body.innerHTML = template;
   }
 }
+
+new App;
