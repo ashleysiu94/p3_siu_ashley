@@ -1,5 +1,6 @@
 import { header } from './modules/header';
 import { lunch_generator } from './modules/lunch-generator';
+import { menu } from './modules/menu';
 import { footer } from './modules/footer';
 
 class App {
@@ -10,36 +11,33 @@ class App {
   renderTemplate() {
     const template = `
       <header>
-        <h1></h1>
+        <div>
+          <h1>${header.title}</h1>
+        </div>
       </header>
 
       <main>
         <div>
           <div>
-            <div>
-              food
-            </div>
-            <div>
-              drink
-            </div>
+            <div id="side"></div>
+            <div id="drink"></div>
           </div>
-          <div>
-            main course
-          </div>
+          <div id="main-course"></div>
         </div>
         <section>
-          <h2></h2>
+          <h2>${menu.title}</h2>
+          <hr>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>${menu.main}</li>
+            <li>${menu.side}</li>
+            <li>${menu.drink}</li>
           </ul>
-          <p></p>
+          <p>${menu.prompt}</p>
         </section>
       </main>
 
       <footer>
-        <p></p>
+        ${footer.footerContent}
       </footer>
     `;
 

@@ -1,6 +1,6 @@
 class Footer {
   constructor(footerContent){
-    this.footerContent = footerContent;
+    this.footerContent = "Created by Ashley Siu";
   }
 }
 

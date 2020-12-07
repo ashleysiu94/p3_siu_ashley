@@ -1,6 +1,6 @@
 class Header {
-  constructor(headerContent){
-    this.headerContent = headerContent;
+  constructor(title){
+    this.title = "Lunch Generator";
   }
 }
 

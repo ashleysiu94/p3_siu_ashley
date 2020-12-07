@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #ea536f;
+  margin-left: 75px;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+}
+
+header div {
+  background-color: #f9eadf;
+  height: 100px;
+  width: 527px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+main section {
+  border: solid 2px #4d1b23;
+  height: 450px;
+  width: 33%;
+  padding: 25px;
+  margin: 25px;
+}
+
+main section h2 {
+  font-family: 'Auto Pro', sans-serif;
+  font-size: 1.5rem;
+  color: #ea536f;
+  margin-bottom: 7px;
+}
+
+main section hr {
+  border: solid 2px #ea536f;
+}
+
+main section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+main section ul li {
+  font-family: 'Auto Pro', sans-serif;
+  font-size: 1rem;
+  color: #ea536f;
+  padding: 10px 0;
+}
+
+main section p {
+  font-family: 'Auto Pro', sans-serif;
+  font-size: 1rem;
+  color: #4d1b23;
+  margin-top: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  height: 25px;
+  font-family: 'Auto Pro', sans-serif;
+  font-size: 1rem;
+  color: #ea536f;
+}
