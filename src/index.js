@@ -1,5 +1,5 @@
 import { header } from './modules/header';
-import { lunch-generator } './modules/lunch-generator';
+import { lunch_generator } from './modules/lunch-generator';
 import { footer } from './modules/footer';
 
 class App {
@@ -17,7 +17,7 @@ class App {
         <div>
           <div>
             <div>
-              appetizer
+              food
             </div>
             <div>
               drink

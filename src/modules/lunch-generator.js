@@ -4,4 +4,4 @@ class LunchGenerator {
   }
 }
 
-export const lunch-generator = new LunchGenerator('Lunch Content!');
+export const lunch_generator = new LunchGenerator('Lunch Content!');

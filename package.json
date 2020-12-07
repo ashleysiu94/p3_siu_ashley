@@ -1,0 +1,30 @@
+{
+  "name": "p3_siu_ashley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleysiu94/p3_siu_ashley.git"
+  },
+  "author": "ashley siu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleysiu94/p3_siu_ashley/issues"
+  },
+  "homepage": "https://github.com/ashleysiu94/p3_siu_ashley#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}
