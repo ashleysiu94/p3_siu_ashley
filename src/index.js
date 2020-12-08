@@ -30,7 +30,7 @@ class App {
           </div>
           <img id="main" src="${main_generator.photo}" title="${main_generator.name}" alt="${main_generator.name}">
         </div>
-        <section>
+        <section id="menu">
           <h2>${menu.title}</h2>
           <hr>
           <ul>
