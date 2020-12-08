@@ -1,6 +1,7 @@
 class Footer {
-  constructor(footerContent){
-    this.footerContent = "Created by Ashley Siu";
+  constructor(prompt, name){
+    this.prompt = "Created by ";
+    this.name = "Ashley Siu";
   }
 }
 

@@ -40,7 +40,8 @@ class App {
       </main>
 
       <footer>
-        ${footer.footerContent}
+        ${footer.prompt}
+        ${footer.name}
       </footer>
     `;
 
