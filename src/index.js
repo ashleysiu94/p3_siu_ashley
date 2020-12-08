@@ -1,5 +1,7 @@
 import { header } from './modules/header';
-import { lunch_generator } from './modules/lunch-generator';
+import { main_generator } from './modules/main-generator';
+import { side_generator } from './modules/side-generator';
+import { drink_generator } from './modules/side-generator';
 import { menu } from './modules/menu';
 import { footer } from './modules/footer';
 
@@ -11,18 +13,19 @@ class App {
   renderTemplate() {
     const template = `
       <header>
-        <div>
+        <div id="header">
           <h1>${header.title}</h1>
+          <img src="${header.logo}" title="logo" alt="logo">
         </div>
       </header>
 
       <main>
-        <div>
+        <div id="food">
           <div>
-            <div id="side"></div>
-            <div id="drink"></div>
+            <img class="side" src="../images/guac_side_mexican.png" alt="guacamole" title="guacamole">
+            <img class="drink" src="../images/lemonade_drink_american.png" alt="lemonade" title="lemonade">
           </div>
-          <div id="main-course"></div>
+          <img class="main" src="../images/pasta_main_italian.png" title="pasta" alt="pasta">
         </div>
         <section>
           <h2>${menu.title}</h2>
