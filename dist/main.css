@@ -82,16 +82,19 @@ main #food {
   align-items: center;
 }
 
-.side {
+#side {
   width: 180px;
+  height: 180px;
 }
 
-.drink {
+#drink {
   width: 140px;
+  height: 140px;
 }
 
-.main {
+#main {
   width: 320px;
+  height: 320px;
 }
 
 footer {
@@ -112,6 +115,27 @@ footer {
   header div {
     width: 100%;
     justify-content: center;
-    padding: 0 20px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #food {
+    width: 100%;
+  }
+  main section {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  header h1 {
+    margin-left: 20px;
+  }
+  header img {
+    margin-right: 20px;
   }
 }

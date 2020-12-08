@@ -20,10 +20,14 @@ header {
 header div {
   background-color: #f9eadf;
   height: 100px;
-  width: 527px;
+  width: 627px;
   display: flex;
   align-items: center;
   margin-top: 50px;
+}
+
+header img {
+  height: 75px;
 }
 
 main {
@@ -70,6 +74,29 @@ main section p {
   margin-top: 50px;
 }
 
+main #food {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  justify-content: center;
+  align-items: center;
+}
+
+#side {
+  width: 180px;
+  height: 180px;
+}
+
+#drink {
+  width: 140px;
+  height: 140px;
+}
+
+#main {
+  width: 320px;
+  height: 320px;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -78,4 +105,37 @@ footer {
   font-family: 'Auto Pro', sans-serif;
   font-size: 1rem;
   color: #ea536f;
+}
+
+@media (max-width: 650px) {
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  header div {
+    width: 100%;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #food {
+    width: 100%;
+  }
+  main section {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  header h1 {
+    margin-left: 20px;
+  }
+  header img {
+    margin-right: 20px;
+  }
 }

@@ -6,9 +6,9 @@ class SideGenerator {
   }
 }
 
-const kimchi = new SideGenerator('Kimchi','Photo','Korean');
-const salad = new SideGenerator('Side','Photo','American');
-const guacamole = new SideGenerator('Guacamole','Photo','Mexican');
-const minestrone = new SideGenerator('Minestrone','Photo','Italian');
+const kimchi = new SideGenerator('Kimchi','../images/kimchi_side_korean.png','Korean');
+const salad = new SideGenerator('Side','../images/salad_side_american.png','American');
+const guacamole = new SideGenerator('Guacamole','../images/guac_side_mexican.png','Mexican');
+const minestrone = new SideGenerator('Minestrone','../images/minestrone_side_italian.png','Italian');
 
-export const side_generator = new SideGenerator('Lunch Content!');
+export const side_generator = new SideGenerator('Lunch Side Dish Content!');

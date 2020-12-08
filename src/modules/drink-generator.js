@@ -6,9 +6,9 @@ class DrinkGenerator {
   }
 }
 
-const hotTea = new DrinkGenerator('Hot Tea','Photo','Korean');
-const lemonade = new DrinkGenerator('Lemonade','Photo','American');
-const horchata = new DrinkGenerator('Horchata','Photo','Mexican');
-const chiantiWine = new DrinkGenerator('Chianti Wine','Photo','Italian');
+const hotTea = new DrinkGenerator('Hot Tea','../images/hottea_drink_korean.png','Korean');
+const lemonade = new DrinkGenerator('Lemonade','../images/lemonade_drink_american.png','American');
+const horchata = new DrinkGenerator('Horchata','../images/horchata_drink_mexican.png','Mexican');
+const chiantiWine = new DrinkGenerator('Chianti Wine','../images/wine_drink_italian.png','Italian');
 
-export const drink_generator = new DrinkGenerator('Lunch Content!');
+export const drink_generator = new DrinkGenerator('Lunch Drinks Content!');

@@ -8,6 +8,7 @@ import { footer } from './modules/footer';
 class App {
   constructor(){
     this.renderTemplate();
+    main_generator.changeImage();
   }
 
   renderTemplate() {
@@ -22,16 +23,16 @@ class App {
       <main>
         <div id="food">
           <div>
-            <img class="side" src="../images/guac_side_mexican.png" alt="guacamole" title="guacamole">
-            <img class="drink" src="../images/lemonade_drink_american.png" alt="lemonade" title="lemonade">
+            <img id="side" src="../images/guac_side_mexican.png" alt="guacamole" title="guacamole">
+            <img id="drink" src="../images/lemonade_drink_american.png" alt="lemonade" title="lemonade">
           </div>
-          <img class="main" src="../images/pasta_main_italian.png" title="pasta" alt="pasta">
+          <img id="main" src="${main_generator.photo}" title="${main_generator.name}" alt="${main_generator.name}">
         </div>
         <section>
           <h2>${menu.title}</h2>
           <hr>
           <ul>
-            <li>${menu.main}</li>
+            <li>${menu.main}<span id="main-name">${main_generator.name}</span></li>
             <li>${menu.side}</li>
             <li>${menu.drink}</li>
           </ul>
@@ -41,7 +42,7 @@ class App {
 
       <footer>
         ${footer.prompt}
-        ${footer.name}
+        ${footer.myName}
       </footer>
     `;
 
